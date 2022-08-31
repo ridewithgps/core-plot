@@ -1,6 +1,6 @@
-#import "TargetConditionals.h"
+#import <TargetConditionals.h>
 
-#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE
+#if TARGET_OS_SIMULATOR || TARGET_OS_IPHONE || TARGET_OS_MACCATALYST
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #else
@@ -72,3 +72,13 @@
 #import "CPTXYAxisSet.h"
 #import "CPTXYGraph.h"
 #import "CPTXYPlotSpace.h"
+
+#import "CPTGridLineGroup.h"
+#import "CPTDerivedXYGraph.h"
+#import "CPTPlotGroup.h"
+#import "CPTDebugQuickLook.h"
+#import "CPTAxisLabelGroup.h"
+#import "NSNumberExtensions.h"
+#import "NSCoderExtensions.h"
+#import "CPTGridLines.h"
+#import "NSDecimalNumberExtensions.h"
